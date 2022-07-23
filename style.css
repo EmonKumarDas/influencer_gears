@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #fffffff8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    color: #ffffff;
+    background-color: rgb(223, 53, 30);
+    border: none;
+    padding: 15px 2px;
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.container{
+    margin: 30px auto;
+    width: 90%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.menu ul{
+    display: flex;
+    gap: 20px;
+}
+ul li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.slider{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+.left-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+.left-blog h1{
+    font-size: 5vw;
+}
+
+.circle img{
+    width: 65%;
+    position: relative;
+    left: 25%;
+    top:20%;
+}
+.right-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    right: 18%;
+    bottom:30%;
+
+}
+
+.right-image img{ 
+    width: 50%;
+}
+.company{
+    display: grid;
+    grid-template-columns:repeat(7,1fr);
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+
+}
+.Popular-collection{
+    margin-top: 70px;
+}
+.Popular-collection h2{
+    text-align: center;
+    font-size: 3vw;
+}
+.popular-collection-card{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);  
+    gap: 10px;
+    margin-top: 50px;
+
+}
+.card-body{
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+}
+.card-body h1{
+    padding-top: 10px;
+}
+.card-body h3{
+    padding: 10px 0px;
+    font-size: 1.5rem;
+}
+.card-body h4{
+    color: rgba(0, 0, 0, 0.479);
+    font-weight: 900;
+}
+.card-body img{
+    width: 100%;
+}
+.featured-collection{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,0.5fr);
+    
+}
+.featured-img img{
+    width: 40vw;
+}
+.featured-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured-blog h1{
+    font-size: 3vw;
+
+}
+.featured-blog p{
+
+    margin-top: 20px;
+    text-align: justify;
+}
+.featured-blog button{
+    margin-top: 20px;
+}
+.footer-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: #0A0826;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    line-height: 30px;
+}
+.social-icon{
+   display: flex;
+   gap: 10%;
+   margin-top: 10px;
+}
+@media screen and (max-width: 934px) {
+   .menu{
+    display: none;
+   }
+   .slider{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.circle-img{
+    display: none;
+}
+.circle{
+    position: relative;
+    right: 10%;
+    padding: 30px;
+}
+
+.left-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 20px;
+}
+.company{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+
+}
+.popular-collection-card{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);  
+    gap: 10px;
+    margin-top: 50px;
+
+}
+.featured-collection{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(1,0.5fr);
+    justify-content: center;
+    
+}
+.featured-img img{
+    width: 70vw;
+}
+.featured-blog button{
+    width: 70vw;
+}
+}
+@media screen and (max-width: 414px){
+    .popular-collection-card{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);  
+        gap: 10px;
+        margin-top: 50px;
+    
+    }
+    .left-blog button{
+        width: 70%;
+    }
+    .company{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+    
+    }
+}
